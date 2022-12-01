@@ -5,11 +5,3 @@ const supaBaseApiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmF
 
 // @ts-ignore
 export const supabase = createClient(supaBaseUrl, supaBaseApiKey)
-
-
-export const test = async () => {
-    const data = await supabase.from('TestTable').select('*')
-
-    return data;
-
-}

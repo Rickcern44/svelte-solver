@@ -1,13 +1,12 @@
+
 <script>
     	import { page } from '$app/stores';
         let pageName = $page.url.pathname;
 </script>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark px-4">
     <a class="navbar-brand" href="/">Svelte-Doku</a>
-    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span> -->
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="/" aria-current={pageName === '/' ? 'page' : undefined}>Home</a>
