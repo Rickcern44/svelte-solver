@@ -1,8 +1,8 @@
 <script>
-// @ts-nocheck
+    // @ts-nocheck
+    export let game;
+    let board = game.problem;
 
-    let board = Array(9).fill(Array(9).fill('0'));
-    export let problem;
     let cellElements = {};
     let numberRange = '123456789';
 
@@ -24,8 +24,6 @@
         if (event.key === 'ArrowUp' && rowIndex > 0){
             cellElements[cellId(rowIndex - 1, cellIndex)].focus();
         }
-
-        console.log(cellElements)
     }
 </script>
 <div class="container-fluid game-board">
@@ -35,7 +33,7 @@
                 <input
                     bind:this={cellElements[cellId(i,j)]}
                     class="itemInput" type="text" 
-                    value="{problem[i][j]}"
+                    bind:value={board[i][j]}
                     on:keydown|preventDefault={(e) => onKeyDown(e, i, j)}
                 />
         {/each}
