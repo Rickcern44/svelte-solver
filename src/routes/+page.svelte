@@ -1,6 +1,5 @@
 <script>
 // @ts-nocheck
-// let agent = !!navigator.userAgent.match(/iphone|android|blackberry/ig) || false;
 </script>
 <div class="page">
     <h1>Svelte Solver</h1>
