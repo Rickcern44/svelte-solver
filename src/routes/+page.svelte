@@ -11,16 +11,15 @@
         </p>
     </div>
     <div>
-        <button type="button" class="btn btn-success">
-            <a href="/game">Start Solving</a>
+        <button type="button" class="inline-block px-6 mx-6 py-2 border-2 border-green-500 text-green-500 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+            <a href="/game"
+            class="text-gray-800 hover:text-gray-300 transition duration-300 ease-in-out mb-4"
+            >Start Solving</a>
         </button>
     </div>
+    
 </div>
 <style>
-    a{
-        color: white;
-        text-decoration: none;
-    }
     button{
         width: 300px;
     }
