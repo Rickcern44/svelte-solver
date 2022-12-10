@@ -32,7 +32,8 @@
         {#each row as r, j}
                 <input
                     bind:this={cellElements[cellId(i,j)]}
-                    class="itemInput" type="text" 
+                    class="itemInput" 
+                    type="tel"
                     bind:value={board[i][j]}
                     on:keydown|preventDefault={(e) => onKeyDown(e, i, j)}
                 />
@@ -49,14 +50,44 @@
     .game-board{
         justify-content: center;
     }
-    .itemInput{
-        width: 50px;
-        height: 50px;
-        border: 1px solid black;
-        background-color: slategray;
-        text-align: center;
-    }
-    input[type=text]:focus{
+    input[type=tel]:focus{
         box-shadow: 0 0 5px green;
+        background-color:whitesmoke ;
     }
-</style>
+    @media (min-width: 320px) and (max-width: 480px){
+        .itemInput{
+            width: 40px;
+            height: 40px;
+            border: .5px solid black;
+            background-color: lightgray;
+            text-align: center;
+        }
+    }
+    @media (min-width: 769px) and (max-width: 1024px){
+        .itemInput{
+            width: 60px;
+            height: 60px;
+            border: .5px solid black;
+            background-color: lightgray;
+            text-align: center;
+        }
+    }
+    @media (min-width: 1025px) and (max-width: 1200px){
+        .itemInput{
+            width: 70px;
+            height: 70px;
+            border: 1.5px solid black;
+            background-color: lightgray;
+            text-align: center;
+        }
+    }
+    @media (min-width: 1201px){
+        .itemInput{
+            width: 100px;
+            height: 100px;
+            border: 1.5px solid black;
+            background-color: lightgray;
+            text-align: center;
+        }
+    }
+    </style>

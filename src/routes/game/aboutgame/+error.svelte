@@ -1,4 +1,6 @@
 <script>
 </script>
-
-<h1>How to Play</h1>
+<h1>Error</h1>
+<style>
+    
+</style>
