@@ -1,9 +1,10 @@
 <script>
     import Header from './../component/header.svelte';
-import './../styles.css'
+	import "./../app.css"
+    import NavMenu from './../component/navMenu.svelte'
 </script>
 <div class="app">
-    <Header />
+    <NavMenu />
     <main>
         <slot />
     </main>

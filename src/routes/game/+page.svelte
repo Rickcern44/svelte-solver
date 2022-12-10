@@ -12,6 +12,4 @@
 
 </script>
 
-<h1>Svelte-Doku</h1>
-
 <Gameboard game={game}/>
