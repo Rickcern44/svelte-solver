@@ -17,6 +17,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/about">About</a>
           </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="/login">Log In</a>
+          </li>
         </ul>
       </div>
 </nav>
